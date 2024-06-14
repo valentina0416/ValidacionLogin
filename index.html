@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+    <title>Registrarse</title>
+
+</head>
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <h2>Registrate</h2>
+        </div>
+        <form id="formulario" action="procesar.php" method=" ">
+
+            <div class="form-control">
+                <label for="usuario">Nombre de usuario</label>
+                <input id="usuario" type="text">
+                <p></p>
+            </div>
+
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input id="email" type="email">
+                <p></p>
+            </div>
+
+            <div class="form-control">
+                <label for="pass">Contraseña</label>
+                <input id="pass" type="password">
+                <p></p>
+            </div>
+
+            <div class="form-control">
+                <label for="passConfirma">Confirmar Contraseña</label>
+                <input id="passConfirma" type="password">
+                <p></p>
+            </div>
+
+            <div class="recaptcha">
+                <div class="g-recaptcha" data-sitekey="6LeRpOIpAAAAAP_XNFhjG8rPF6yd4QKf3APqUS9C">
+                    
+                </div>
+                <br>
+ 
+            <button> <a href="inicio.html"  target="_blank" class="button">Enviar</a> </button>
+            
+
+        </form>
+    </div>
+    
+    <script src="app.js" ></script>
+</body>
+</html>
